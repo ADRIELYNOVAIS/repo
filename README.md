@@ -26,6 +26,10 @@ Esse diretório contém um arquivo cvs, que relata que foram simulados 30 requis
 Relatório do Jmeter
 <img width="1078" height="98" alt="image" src="https://github.com/user-attachments/assets/844e877e-14f5-4146-95b5-5e7ba4d9fc0a" />
 
+O regsitro de bugs é encontrado em https://github.com/ADRIELYNOVAIS/repo/issues/1
+
+
+
 
 
 
