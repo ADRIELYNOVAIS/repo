@@ -1,4 +1,4 @@
-Entenda como estão estruturados os diretórios do projeto
+Instrução de Configuração de Ambiente e breve explicação de como o projeto está estruturado
 
 Cypress ( Automação de Testes )
 
