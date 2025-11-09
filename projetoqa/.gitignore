@@ -1,0 +1,58 @@
+# ==============================
+# Node.js / Cypress QA Project
+# ==============================
+
+# Dependências do Node
+node_modules/
+
+# Build e cache do Cypress
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+cypress/results/
+cypress/reports/
+cypress/logs/
+
+# Cache e estado
+.cache/
+dist/
+coverage/
+tmp/
+temp/
+*.log
+*.tmp
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Ambiente / credenciais
+.env
+.env.*
+!.env.example
+
+# Arquivos de IDEs e editores
+.vscode/
+.idea/
+*.code-workspace
+
+# Arquivos do Git
+*.orig
+*.rej
+
+# Arquivos de testes locais
+*.local.json
+*.local.js
+
+# Relatórios e exportações
+reports/
+allure-results/
+allure-report/
+junit-results.xml
+mochawesome-report/
+mochawesome.json
+
+# Configurações específicas
+package-lock.json
