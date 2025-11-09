@@ -1,3 +1,5 @@
+Testes com cypress e outros relatórios
+
 1. Em um terminal use o comando : git clone https://github.com/ADRIELYNOVAIS/repo.git
 2. Depois o comando: cd repo/projetoqa/
 3. Verifique se você possui o Node.js instalado com o comando: node -v
@@ -6,6 +8,15 @@
 6. Escolha clique na opção E2E Testing <img width="1476" height="826" alt="image" src="https://github.com/user-attachments/assets/ab70b47b-e3a1-4a83-87f5-e980f75aff7a" />
 7. Selecione um browser e depois clique no botão "start" <img width="1470" height="703" alt="image" src="https://github.com/user-attachments/assets/79f12405-63db-4255-95cd-5e1090818ede" />
 8. Em specs ficam os diretórios do projeto, ao clicar em uma feature os testes automatizados serão executados <img width="1919" height="583" alt="image" src="https://github.com/user-attachments/assets/094431e2-44b1-40a1-b337-20089af9a285" />
+
+
+Teste de Acessibilidade:
+
+No diretório repo/projetoqa/Teste de Acessibilidade, o relatório disponibilizado nesse caminha é do tipo html e para acessa-lo bastar clicar com o botão direito do mouse e abrir com algum navegador.
+
+Teste de Performance:
+
+No diretório repo/projetoqa/Teste de Performance, o relatório disponibilizado nesse caminha é do tipo html e para acessa-lo bastar clicar com o botão direito do mouse e abrir com algum navegador.
 
 
 
