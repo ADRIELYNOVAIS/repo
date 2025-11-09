@@ -12,11 +12,11 @@ Testes com cypress e outros relatórios
 
 Teste de Acessibilidade:
 
-No diretório repo/projetoqa/Teste de Acessibilidade, o relatório disponibilizado nesse caminha é do tipo html e para acessa-lo bastar clicar com o botão direito do mouse e abrir com algum navegador.
+No diretório repo/projetoqa/Teste de Acessibilidade, o relatório disponibilizado nesse caminho é do tipo html e para acessa-lo bastar clicar com o botão direito do mouse e abri-lo com algum navegador.
 
 Teste de Performance:
 
-No diretório repo/projetoqa/Teste de Performance, o relatório disponibilizado nesse caminha é do tipo html e para acessa-lo bastar clicar com o botão direito do mouse e abrir com algum navegador.
+No diretório repo/projetoqa/Teste de Performance, o relatório disponibilizado nesse caminho é do tipo html e para acessa-lo bastar clicar com o botão direito do mouse e abri-lo com algum navegador.
 
 
 
