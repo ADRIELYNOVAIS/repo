@@ -1,31 +1,54 @@
-name: Cypress Cucumber Tests
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Build
 
 on:
   push:
-    branches: [ main, develop ]
+    branches:
+      - main
   pull_request:
-    branches: [ main, develop ]
+    branches:
+      - main
 
 jobs:
-  cypress-run:
-    runs-on: ubuntu-24.04
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+        # these versions must be kept in sync with enginesTested.node in package.json
+        node-version: [20.x, 22.x, 24.x]
+      fail-fast: false
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-
-      - name: Configurar Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - name: with Node.js ${{ matrix.node-version }} on ${{ matrix.os }}
+        uses: actions/setup-node@v6
         with:
-          node-version: 20
-          cache: 'npm'
+          node-version: ${{ matrix.node-version }}
+      - run: npm install-test
 
-      - name: Instalar dependências
-        run: npm ci
-
-      - name: Rodar testes Cypress com Cucumber
-        uses: cypress-io/github-action@v6
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
         with:
-          browser: chrome
-          headless: true
-          spec: cypress/e2e/**/*.feature
+          node-version: 22.x
+      - run: npm install
+      - run: npm run test-coverage
+      - uses: coverallsapp/github-action@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+  audit-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22.x
+      - run: npm audit --groups dependencies --audit-level high

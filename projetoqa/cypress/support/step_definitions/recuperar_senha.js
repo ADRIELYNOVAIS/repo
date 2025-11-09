@@ -1,7 +1,7 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
 Given("que o usuário está na página de login", () => {
-  cy.visit("/");
+  cy.visit('/');
 });
 
 When("ele clicar em {string}", (texto) => {
